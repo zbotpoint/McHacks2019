@@ -1,0 +1,15 @@
+#dropbox{
+    width:500px;
+    border-width: 1px;
+    border-color:grey;
+    border-style:dashed;
+    border-radius:5px;
+    margin: 0 auto
+}
+.dragbox{
+    padding:25px;
+}
+.dragboxhover{
+    background-color:#FFDF9B;
+    padding:25px;
+}
