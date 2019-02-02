@@ -1,19 +1,18 @@
 import React, {Component} from 'react'
 
 class Form extends Component{
-    contructor(props){
-        super(props);
-
-        this.state = {
-            items: []
-        };
-
-        this.addItem = this.addItem.bind(this)
-    }
+    componentDidUpdate() {
+        this.props.inputElement.current.focus()
+      }
     render(){
         return(
-            <form onSubmit={this.addItem}>
-            <input ref={(a) => this._inputElement = a} placeholder="First Name"></input>
+            <form onSubmit={this.props.addItem}>
+            <input
+              ref={this.props.inputElement}
+              value={this.props.currentItem.text}
+              onChange={this.props.handleInput} 
+              placeholder="First Name">
+            </input>
             <button type="submit">add</button>
             </form>
         )

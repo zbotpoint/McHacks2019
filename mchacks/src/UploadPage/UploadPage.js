@@ -5,8 +5,8 @@ import Drop from './DropZone'
 class UploadPage extends Component{
     render(){
         return(
-            <div class="body">
-                <p class="title">Upload Receipt</p>
+            <div className="body">
+                <p className="title">Upload Receipt</p>
                 <Drop/>
                 <br></br>
                 <button className="Button">Next Step</button>
