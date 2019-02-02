@@ -91,7 +91,7 @@ class Home extends Component {
           >
             <TextField
               id="standard-name"
-              label="Name"
+              label="Amount"
               value={this.state.amount}
               onChange={this.handleChange("amount")}
               margin="normal"
@@ -105,14 +105,14 @@ class Home extends Component {
             />
             <TextField
               id="standard-name"
-              label="Name"
+              label="E-Mail"
               value={this.state.email}
               onChange={this.handleChange("email")}
               margin="normal"
             />
             <TextField
               id="standard-name"
-              label="Name"
+              label="Memo"
               value={this.state.memo}
               onChange={this.handleChange("memo")}
               margin="normal"
