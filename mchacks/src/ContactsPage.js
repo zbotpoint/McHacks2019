@@ -5,7 +5,7 @@ import Form from './Form.js'
 class ContactsPage extends Component{
     constructor() {
         super()
-        this.sate = {
+        this.state = {
           items: [],
           currentItem: {text:'', key:''},
         }
